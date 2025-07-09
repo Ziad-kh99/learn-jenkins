@@ -1,0 +1,12 @@
+pipeline {
+    agent any 
+
+    stages {
+        stage ('Build') {
+            steps {
+                // get some code from a GitHub repo.
+                git 'repo-url'
+            }
+        }
+    }
+}
